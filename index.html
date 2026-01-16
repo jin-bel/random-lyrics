@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+</head>
+<body>
+<script>
+  const lyrics = [
+    "lyrics1.html"
+  ];
+
+  const pick = lyrics[Math.floor(Math.random() * lyrics.length)];
+  location.replace(pick + "?t=" + Date.now());
+</script>
+</body>
+</html>
