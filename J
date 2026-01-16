@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>오늘의 가사</title>
+</head>
+<body>
+<script>
+  const lyrics = [
+    "https://example.com/lyrics1",
+    "https://example.com/lyrics2",
+    "https://example.com/lyrics3"
+  ];
+
+  const pick = lyrics[Math.floor(Math.random() * lyrics.length)];
+  location.replace(pick + "?t=" + Date.now());
+</script>
+</body>
+</html>
